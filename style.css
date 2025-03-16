@@ -1,0 +1,136 @@
+/* color sampler
+
+white:          #fbf7fa
+cream:          #f2f8f0
+light blue:     #b9dce9
+medium blue:    #61b1cc
+deep blue:      #273d6e
+darkest blue:   #141f3e
+black:          #221d1f
+
+red:            #a14f48    
+peach:          #f0d0c9
+deep peach:     #ce9c88
+
+*/
+
+@font-face {
+    font-family: pixelFont;
+    src: url("assets/VCR_OSD_MONO_1.001.ttf");
+}
+
+
+* {
+    cursor: pointer;
+    font-family: pixelFont;
+}
+
+a {
+    cursor: grab;
+}
+
+body {
+    background-color: white;
+    background-image: url("assets/tile.jpg");
+    background-repeat: repeat; 
+    padding: 0;
+    margin: 0;
+}
+
+
+.room-name {
+    position: absolute;
+    font-family: pixelFont;
+    background-color: #f2f8f0;
+    color: #273d6e;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    margin: 0px;
+    padding: 3px;
+    border: 2px dotted white;
+    font-size: 13px;
+    width: 60px;
+    border-radius: 20px;
+    cursor: grab;
+    z-index: -1;
+
+    transition-duration: 500ms;
+}
+
+.room-name:hover {
+    background-color: #f9e7e3;
+    color: #8f5740;
+}
+
+.close-btn {
+    display: block;
+    position: fixed;
+    top: 5px;
+    left: 9px;
+    width: 18px;
+    height: 18px;
+    transform: rotate(45deg);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 22px;
+    color: red;
+
+    
+}
+
+.close-btn:hover {
+    transform: rotate(-45deg);
+    transition-duration: 1000ms;
+    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+.close-btn:not(:hover) {
+    transform: rotate(45deg);
+    transition-duration: 1000ms;
+}
+
+#hotdryroomtitle {
+    width: 80px;
+}
+#changingroomtitle {
+    width: 80px;
+}
+
+
+/* entrance header style */
+#entrance {
+    position: fixed;
+    text-shadow: 1px 3px 1px white;
+    border: 6px teal;
+
+    font-size: 90px; 
+    text-align: left;
+}
+
+.full-page-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    border: none;
+  }
+  
+.disappear {
+    display: none;
+}
+
+#plan-test {
+    position: fixed;
+    top: 100px;
+    left: 5vw;
+    width: 90vw;
+}
+
+#sign {
+    position: fixed; 
+    bottom: 10px;
+    right: 10px; 
+}

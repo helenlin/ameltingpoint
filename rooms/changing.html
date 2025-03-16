@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+
+      #mirror {
+        position: absolute;
+        left: 10vw;
+        width: 80vw;
+        top: 10vh;
+        max-width: 500px;
+        /* Add the blur effect */
+        filter: blur(8px);
+        -webkit-filter: blur(8px);
+    } 
+
+    #mirror:hover {
+        opacity:0.8;
+        filter: blur(2px);
+        -webkit-filter: blur(2px);
+    }
+    </style>
+    <script type="module" src="../script.js"></script>
+    <script type="module" src="mirror.js"></script>
+  </head>
+
+
+  <body>
+    <div id="overlay">
+      <a href="../index.html" class="room-name" style="top: 15px; left: 15px;">back to lobby</a>
+    </div>
+
+    <img id="mirror" class="center" src="../assets/mirror.png">
+
+  </body>
+</html>
+
+
+
+
+
+
