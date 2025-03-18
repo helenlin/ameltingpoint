@@ -3,16 +3,25 @@
   <head>
     <link rel="stylesheet" href="../style.css">
     <style>
-      #sign {
-        transform: rotateY(0deg);
+      .dropdown {
+        position: absolute;
+        display: inline-block;
+        top: 120px;
+        left: 160px;
       }
-      #sign:hover {
-        transform: rotateY(180deg);
-        transition-duration: 3000ms;
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px 16px;
+        z-index: 1;
       }
-      #sign:not(:hover) {
-        transform: rotateY(360deg);
-        transition-duration: 3000ms;
+
+      .dropdown:hover .dropdown-content {
+        display: block;
       }
     </style>
     <script type="module" src="../script.js"></script>
@@ -24,16 +33,18 @@
       <a href="../index.html" class="room-name" style="top: 15px; left: 15px;">back to lobby</a>
     </div>
 
-    <img id="sign" alt="High blood pressure, heart disease, physical discomfort, and bathers after drinking alcohol are forbidden to enter the sauna without being advised to cause any problems." src="../assets/fadedsign.jpg">
+    <div class="dropdown">
+      <span>hanging threads</span>
+      <div class="dropdown-content">
+        <p>woven down</p>
+      </div>
+    </div>
+
 
 
     
   </body>
 </html>
-
-
-
-
 
 
 

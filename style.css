@@ -37,6 +37,13 @@ body {
     margin: 0;
 }
 
+.planImg {
+    position: absolute;
+    width: 20vw;
+    opacity: 0.9;
+    mix-blend-mode: multiply;
+    z-index:-1;
+}
 
 .room-name {
     position: absolute;
@@ -52,14 +59,22 @@ body {
     width: 60px;
     border-radius: 20px;
     cursor: grab;
-    z-index: -1;
+    z-index: 0;
 
     transition-duration: 500ms;
+    
 }
 
 .room-name:hover {
     background-color: #f9e7e3;
     color: #8f5740;
+    filter: drop-shadow(0px 0px 10px #94877f);
+    transition-duration: 1000ms;
+}
+
+.room-name:not(:hover) {
+    filter: drop-shadow(0px 0px 0px #c2c9cc);
+    transition-duration: 1000ms;
 }
 
 .close-btn {
