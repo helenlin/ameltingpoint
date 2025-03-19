@@ -1,62 +1,80 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="style.css">
-    <style>
-      * {
-        padding-bottom: 10px;
-        border: 6px #ffffff;
-      }
+    <title>a melting point</title>
+      <link rel="shortcut icon" href="assets/favicon.ico">
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="style.css">
+      <style>
+        * {
+          padding-bottom: 10px;
+          border: 6px #ffffff;
+        }
 
-      body {
-        background-color: white;
-        background-image: none;
-        padding: 0;
-        margin: 0;
+        /* entrance header style 
+        #entrance {
+            position: fixed;
+            background-color: black;
+            text-shadow: 1px 2px 1px #b6a7a0;
+            color: #ffffff;
+            border: 6px teal;
+
+            font-size: 20px; 
+            margin: auto;
+            text-align: center;
+            padding-top: 5px;
+            width: 100%;
+          }*/
+      </style>
+
+    <script>
+      let entranceColors = ["black", "red", "orange", "peach"];
+
+      document.getElementById("entrance").onclick = function() {
+        document.getElementById("entrance").style.backgroundColor = entranceColors[1];
       }
-          
-    </style>
+    </script>
   </head>
 
 
   <body>
     <!-- placement for base entrance -->
-    <div id = "entrance"></div>
+    <div id="entrance"></div>
 
 
 
-    <img id="plan-boiling" class="planImg" style="top: 24vw; left: 17vw; width: 13vw;" src="assets/fp-trim/boiling.png">
-    <a href="rooms/boiler.html" class="room-name" style="top: 30vw; left: 18vw;">boiling</a>
+    <img id="plan-boiling" class="planImg" style="top: 34vw; left: 17vw; width: 13vw;" src="assets/fp-trim/boiling.png">
+    <a href="rooms/boiler.html" class="room-name" style="top: 40vw; left: 18vw;">boiling</a>
 
-    <img id="plan-changing" class="planImg" style="top: 12vw; left: 47vw;" src="assets/fp-trim/changing.png">
-    <a href="rooms/changing.html" class="room-name" id="changingroomtitle" style="top: 19vw; left: 54vw;">changing</a>
+    <img id="plan-changing" class="planImg" style="top: 22vw; left: 47vw;" src="assets/fp-trim/changing.png">
+    <a href="rooms/changing.html" class="room-name" id="changingroomtitle" style="top: 29vw; left: 54vw;">changing</a>
 
-    <img id="plan-cold" class="planImg" style="top: 36vw; left: 50vw; width: 16vw;" src="assets/fp-trim/cold.png">
-    <a id="linkCold" class="room-name" onclick="handleLinkClick('linkCold')" style="top: 46vw; left: 52vw;">cold</a>
+    <img id="plan-cold" class="planImg" style="top: 46vw; left: 50vw; width: 16vw;" src="assets/fp-trim/cold.png">
+    <a id="linkCold" class="room-name" onclick="handleLinkClick('linkCold')" style="top: 56vw; left: 52vw;">cold</a>
 
-    <img id="plan-dry" class="planImg" style="top: 13vw; left: 27vw; width: 15vw;" src="assets/fp-trim/dry.png">
-    <a href="rooms/dry.html" class="room-name" id="hotdryroomtitle" style="top: 19vw; left: 29vw;">dry</a>
+    <img id="plan-dry" class="planImg" style="top: 23vw; left: 27vw; width: 15vw;" src="assets/fp-trim/dry.png">
+    <a href="rooms/dry.html" class="room-name" id="hotdryroomtitle" style="top: 29vw; left: 29vw;">dry</a>
 
-    <img id="plan-freezing" class="planImg" style="top: 52vw; left: 49vw; width: 15vw;" src="assets/fp-trim/freezing.png">
-    <a href="rooms/freezing.html" class="room-name" style="top: 56vw; left: 51vw;">freezing</a>
+    <img id="plan-freezing" class="planImg" style="top: 62vw; left: 49vw; width: 15vw;" src="assets/fp-trim/freezing.png">
+    <a href="rooms/freezing.html" class="room-name" style="top: 66vw; left: 51vw;">freezing</a>
 
-    <img id="plan-hot" class="planImg" style="top: 25vw; left: 27vw; width: 30vw;" src="assets/fp-trim/hot.png">
-    <a class="room-name" onclick="handleLinkClick('linkHot')" style="top: 32vw; left: 37vw;">hot</a>
+    <img id="plan-hot" class="planImg" style="top: 35vw; left: 27vw; width: 30vw;" src="assets/fp-trim/hot.png">
+    <a class="room-name" onclick="handleLinkClick('linkHot')" style="top: 42vw; left: 37vw;">hot</a>
 
-    <img id="plan-latrine" class="planImg" style="top: 58vw; left: 61vw; width:27vw;" src="assets/fp-trim/latrine.png">
-    <a href="rooms/latrine.html" class="room-name" style="top: 66vw; left: 67vw;">latrine</a>
+    <img id="plan-latrine" class="planImg" style="top: 68vw; left: 61vw; width:27vw;" src="assets/fp-trim/latrine.png">
+    <a href="rooms/latrine.html" class="room-name" style="top: 76vw; left: 67vw;">latrine</a>
 
-    <img id="plan-lobby" class="planImg" style="top: 24vw; left: 53vw; width: 12vw;" src="assets/fp-trim/lobby.png">
-    <a href="index.html" class="room-name" style="top: 32vw; left: 54vw;">lobby</a>
+    <img id="plan-lobby" class="planImg" style="top: 34vw; left: 53vw; width: 12vw;" src="assets/fp-trim/lobby.png">
+    <a href="index.html" class="room-name" style="top: 42vw; left: 54vw;">lobby</a>
 
-    <img id="plan-lounge" class="planImg" style="top: 13vw; left: 64vw; width: 30vw;" src="assets/fp-trim/lounge.png">
-    <a href="rooms/lounge.html" class="room-name" style="top: 41vw; left: 71vw;">lounge</a>
+    <img id="plan-lounge" class="planImg" style="top: 23vw; left: 64vw; width: 30vw;" src="assets/fp-trim/lounge.png">
+    <a href="rooms/lounge.html" class="room-name" style="top: 51vw; left: 71vw;">lounge</a>
 
-    <img id="plan-showers" class="planImg" style="top: 12vw; left: 57vw; width: 26vw;" src="assets/fp-trim/showers.png">
-    <a href="rooms/showers.html" class="room-name" style="top: 17vw; left: 67vw;">showers</a>
+    <img id="plan-showers" class="planImg" style="top: 22vw; left: 57vw; width: 26vw;" src="assets/fp-trim/showers.png">
+    <a href="rooms/showers.html" class="room-name" style="top: 27vw; left: 67vw;">showers</a>
 
-    <img id="plan-warm" class="planImg" style="top: 38vw; left: 14vw; width: 35vw;" src="assets/fp-trim/warm.png">
-    <a id="linkWarm" class="room-name" onclick="handleLinkClick('linkWarm')" style="top: 44vw; left: 25vw;">warm</a>
+    <img id="plan-warm" class="planImg" style="top: 48vw; left: 14vw; width: 35vw;" src="assets/fp-trim/warm.png">
+    <a id="linkWarm" class="room-name" onclick="handleLinkClick('linkWarm')" style="top: 54vw; left: 25vw;">warm</a>
 
     
     <script src="script.js"></script>

@@ -123,6 +123,11 @@ function addMyModel() {
 
   modelLoader.load(url, placeModel1);
   
+
+
+
+
+
   let url2 =
     "https://cdn.glitch.global/bc7332d9-3f8a-4a6d-bba7-9e9039b4e61f/ice_cliff_veipbcmcb_mid.glb?v=1742231324869";
 
@@ -161,19 +166,19 @@ function placeModel2(gltf) {
   mesh.material = new THREE.MeshPhongMaterial( {map: baseColor, normalMap: normColor} );
   
   scene.add(mesh);
-
 }
+
 
 function draw() {
   
   // adjust camera properties manually
-   camera.translateZ(0.1);
+   // camera.translateZ(0.1);
 //   camera.translateX(0.1);
 //   camera.lookAt(-1.4737147755333524, 22.49161696211208,  -0.48755027734745354)
   
   // camera.fov -= 0.1;
  //   camera.aspect = 0.5;
-    camera.near = 25;
+    camera.near = 15;
   
    camera.updateProjectionMatrix();
   

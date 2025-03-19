@@ -21,7 +21,7 @@ deep peach:     #ce9c88
 
 
 * {
-    cursor: pointer;
+    cursor: vertical-text;
     font-family: pixelFont;
 }
 
@@ -43,6 +43,7 @@ body {
     opacity: 0.9;
     mix-blend-mode: multiply;
     z-index:-1;
+    padding-bottom: 50px;
 }
 
 .room-name {
@@ -70,6 +71,13 @@ body {
     color: #8f5740;
     filter: drop-shadow(0px 0px 10px #94877f);
     transition-duration: 1000ms;
+}
+
+.room-name:active {
+    background-color: #f9e7e3;
+    color: #371c18;
+    font-size: 13px;
+    filter: drop-shadow(0px 0px 10px #94877f);
 }
 
 .room-name:not(:hover) {
@@ -114,15 +122,7 @@ body {
 }
 
 
-/* entrance header style */
-#entrance {
-    position: fixed;
-    text-shadow: 1px 3px 1px white;
-    border: 6px teal;
 
-    font-size: 90px; 
-    text-align: left;
-}
 
 .full-page-iframe {
     position: absolute;
@@ -131,6 +131,7 @@ body {
     width: 100vw;
     height: 100vh;
     border: none;
+    z-index: 50000;
   }
   
 .disappear {
