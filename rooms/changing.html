@@ -13,6 +13,7 @@
         /* Add the blur effect */
         filter: blur(8px);
         -webkit-filter: blur(8px);
+        z-index: 1;
     } 
 
     #mirror:hover {
@@ -20,6 +21,15 @@
         filter: blur(2px);
         -webkit-filter: blur(2px);
     }
+
+    #blurred {
+      position: absolute;
+      z-index: 0; 
+      width: 40vw;
+      top: 30vh;
+      left: 28vw;
+    }
+
     </style>
     <script type="module" src="../script.js"></script>
     <script type="module" src="mirror.js"></script>
@@ -31,7 +41,8 @@
       <a href="../index.html" class="room-name" style="top: 15px; left: 15px;">back to lobby</a>
     </div>
 
-    <img id="mirror" class="center" src="../assets/mirror.png">
+    <img id="blurred" alt="figure in the distance" src="../assets/blurred.png">
+    <img id="mirror" alt="image of mirror" class="center" src="../assets/mirror.png">
 
   </body>
 </html>
