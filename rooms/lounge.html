@@ -3,6 +3,80 @@
   <head>
     <link rel="stylesheet" href="../style.css">
     <style>
+
+      body {
+        background-image: url("../assets/walltan.jpg");
+        background-repeat: repeat; 
+      }
+      
+      #walltop {
+        position: fixed;
+        width: 100%;
+        z-index: -1;
+      }
+
+      video {
+        position: absolute;
+        width: 25vw;
+        top: 71vw;
+        left: 22vw;
+        border-radius: 10px 10px 10px 10px;
+        z-index: 1;
+      }
+
+      #tv {
+        position: absolute;
+        z-index: 2;
+        width: 30vw;
+        top: 70vw;
+        left: 20vw;
+      }
+
+      #clock {
+        position: absolute;
+        z-index: 2;
+        width: 30vw;
+        top: 11vw;
+        right: 5vw;
+      }
+
+      #crickets {
+        position: absolute;
+        z-index: 2;
+        width: 20vw;
+        top: 100vw;
+        right: 20vw;
+      }
+
+      #teaegg{
+        position: absolute;
+        width: 28vw;
+        top: 30vw;
+        left: 40vw;
+        padding-bottom: 30vw;
+      }
+
+      #fan {
+        position: absolute;
+        z-index: 2;
+        width: 20vw;
+        top: 120vw;
+        right: 20vw;
+        mix-blend-mode: multiply;
+
+      }
+
+      #bottle{
+        position: absolute;
+        width: 5vw;
+        top: 180vw;
+        left: 40vw;
+        padding-bottom: 30vw;
+      }
+
+
+
+
     </style>
     <script type="module" src="../script.js"></script>
   </head>
@@ -12,6 +86,20 @@
     <div id="overlay">
       <a href="../index.html" class="room-name" style="top: 15px; left: 15px;">back to lobby</a>
     </div>
+
+    <img id="walltop" alt="a white wall with brown border pattern" src="../assets/loungetop.jpg">
+
+    <video loop autoplay id="waterdrops" alt="a soothing video of waterdrops falling into a puddle with ambient waterdrop sound" src="../assets/raindrops.mp4" type=""video/mp4"></video>
+    <img id="tv" alt="a picture of an old tv" src="../assets/tv.png">
+
+
+
+    <img id="clock" src="../assets/loungeclock.png">
+    <img id="crickets" src="../assets/loungecrickets.png">
+    <img id="fan" src="../assets/fan.gif">
+    <img id="bottle" src="../assets/loungebottle.png">
+
+    <div id="teaegg"></div>
 
 
 

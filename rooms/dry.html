@@ -1,8 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>take a dry breath</title>
+    <link rel="shortcut icon" href="../assets/favicon_tea.png">
+    <meta charset="UTF-8">
     <link rel="stylesheet" href="../style.css">
     <style>
+      body {
+        background-image: url("../assets/woodentile.jpg");
+        background-repeat: repeat; 
+      }
+
       .dropdown {
         position: absolute;
         display: inline-block;
@@ -23,6 +31,23 @@
       .dropdown:hover .dropdown-content {
         display: block;
       }
+
+      .driedtea1 {
+        width: 10vw;
+      }
+
+      .driedtea2 {
+        width: 10vw;
+      }
+
+      #dd1 { position:absolute; top:10vw; left:10vw; padding-bottom:10vw;}
+      #dd2 { position:absolute; top:30vw; left:80vw;}
+      #dd3 { position:absolute; top:50vw; left:50vw;}
+      #dd4 { position:absolute; top:70vw; left:20vw;}
+      #dd5 { position:absolute; top:90vw; left:70vw; padding-bottom:40vw;}
+
+
+
     </style>
     <script type="module" src="../script.js"></script>
   </head>
@@ -33,15 +58,56 @@
       <a href="../index.html" class="room-name" style="top: 15px; left: 15px;">back to lobby</a>
     </div>
 
-    <div class="dropdown">
-      <span>hanging threads</span>
+    <div id="dd2" class="dropdown">
+      <span><img class="driedtea1" src="../assets/teagreen1.png"></span>
       <div class="dropdown-content">
-        <p>woven down</p>
+        <img class="driedtea2" src="../assets/teagreen2.png">
       </div>
     </div>
 
+    <div id="dd1" class="dropdown">
+      <span><img class="driedtea1" src="../assets/teagreen1.png"></span>
+      <div class="dropdown-content">
+        <img class="driedtea1" src="../assets/teagreen1.png">
+        <div id="dd1" class="dropdown">
+          <span><img class="driedtea1" src="../assets/teagreen1.png"></span>
+          <div class="dropdown-content">
+            <img class="driedtea2" src="../assets/teagreen2.png">
+          </div>
+        </div> 
+      </div>
+    </div>
 
+    <div id="dd3" class="dropdown">
+      <span><img class="driedtea1" src="../assets/teagreen1.png"></span>
+      <div class="dropdown-content">
+        <img class="driedtea2" src="../assets/teagreen2.png">
+      </div>
+    </div>
 
+    <div id="dd4" class="dropdown">
+      <span><img class="driedtea1" src="../assets/teagreen1.png"></span>
+      <div class="dropdown-content">
+        <div id="dd1" class="dropdown">
+          <span><img class="driedtea1" src="../assets/teagreen1.png"></span>
+          <div class="dropdown-content">
+            <div id="dd1" class="dropdown">
+              <span><img class="driedtea1" src="../assets/teagreen1.png"></span>
+              <div class="dropdown-content">
+                <img class="driedtea2" src="../assets/teagreen2.png">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="dd5" class="dropdown">
+      <span><img class="driedtea1" src="../assets/teagreen1.png"></span>
+      <div class="dropdown-content">
+        <img class="driedtea2" src="../assets/teagreen2.png">
+      </div>
+    </div>
     
   </body>
 </html>

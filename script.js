@@ -17,7 +17,7 @@ function handleLinkClick(index) {
     const link = links[index];
     const iframe = document.createElement('iframe');
     iframe.src = link;
-    iframe.style = "position: absolute; border:5px groove #c1e8e2; z-index:2147483649; top: 100px;";
+    iframe.style = "position: absolute; border:5px groove #c1e8e2; z-index:50000; top: 100px; left: 20px;";
     iframe.width = 300;
     iframe.height = 200;
     iframe.classList.add('iframe', index);

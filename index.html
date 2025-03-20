@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>a melting point</title>
-      <link rel="shortcut icon" href="assets/favicon.ico">
+      <link rel="shortcut icon" href="assets/favicon_chart.png">
       <meta charset="UTF-8">
       <link rel="stylesheet" href="style.css">
       <style>
@@ -11,37 +11,57 @@
           border: 6px #ffffff;
         }
 
-        /* entrance header style 
+        /* entrance header style */
         #entrance {
             position: fixed;
-            background-color: black;
+            background-color: white;
             text-shadow: 1px 2px 1px #b6a7a0;
             color: #ffffff;
             border: 6px teal;
 
-            font-size: 20px; 
+            font-size: 10px; 
             margin: auto;
             text-align: center;
             padding-top: 5px;
             width: 100%;
-          }*/
+          }
+
+          #sign {
+            width: 25vw;
+            opacity: 0.5;
+            border-radius: 5cap;
+            border-style: solid;
+            border-image:linear-gradient(red, transparent) 1;
+            border-bottom:0;
+            transition-duration: 1000ms;
+          }
+
+          #sign:hover{
+            width: 25vw;
+            opacity: 0.9;
+            transition-duration: 1000ms;
+          }
+
+          #sign:not(hover){
+            width: 25vw;
+            opacity: 0.5;
+            transition-duration: 1000ms;
+          }
+
       </style>
 
     <script>
-      let entranceColors = ["black", "red", "orange", "peach"];
-
-      document.getElementById("entrance").onclick = function() {
-        document.getElementById("entrance").style.backgroundColor = entranceColors[1];
-      }
     </script>
   </head>
 
 
   <body>
     <!-- placement for base entrance -->
-    <div id="entrance"></div>
+    <div id="entrance">High blood pressure, heart disease, physical discomfort, and bathers after drinking alcohol are forbidden to enter the sauna without being advised to cause any problems.</div>
 
-
+    <!--
+    <img id="sign" alt="High blood pressure, heart disease, physical discomfort, and bathers after drinking alcohol are forbidden to enter the sauna without being advised to cause any problems." src="assets/fadedsign.jpg">
+    -->
 
     <img id="plan-boiling" class="planImg" style="top: 34vw; left: 17vw; width: 13vw;" src="assets/fp-trim/boiling.png">
     <a href="rooms/boiler.html" class="room-name" style="top: 40vw; left: 18vw;">boiling</a>

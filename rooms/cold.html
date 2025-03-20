@@ -3,25 +3,47 @@
   <head>
     <link rel="stylesheet" href="../style.css">
     <style>
+      html,
+      body {
+        padding: 0;
+        margin: 0;
+      }
+      
+      canvas {
+        border: 10px solid #b9dce9;
+        z-index: 0;
+      }
+      
+      #overlay {
+        z-index: 1;
+        position: fixed;
+      }
+
+      #directions {
+        position: fixed;
+        color: #221d1f;
+      }
+      
     </style>
+
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.172.0/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@0.172.0/examples/jsm/"
+        }
+      }
+    </script>
+    <script type="module" src="cold.js"></script>
     <script type="module" src="../script.js"></script>
   </head>
-
-
   <body>
     <div id="overlay">
+      <!--<a href="../index.html" class="room-name" style="top: 15px; left: 15px;">back to lobby</a>-->
+      <div id="directions" style="top: 30px; left: 150px;">can orbit.</div>
     </div>
-
-
-
-
-    
   </body>
 </html>
-
-
-
-
 
 
 

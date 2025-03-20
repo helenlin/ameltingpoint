@@ -5,8 +5,8 @@
     <style>
       #myForm {
         position: absolute;
-        top: 100px;
-        left: 40px;
+        top: 200px;
+        left: 100px;
       }
     </style>
     <script type="module" src="../script.js"></script>
@@ -18,18 +18,25 @@
       <a href="../index.html" class="room-name" style="top: 15px; left: 15px;">back to lobby</a>
     </div>
 
-    <form id="myForm" action="/action_page.php" method="post">
+    <form id="myForm" action="postit.html">
       <label for="name">Name of past lover:</label><br>
       <input type="text" id="name" name="name" value=""><br><br>
 
-      <label for="supervisor">Name of your supervisor</label><br>
+      <label for="supervisor">Name of your worst supervisor:</label><br>
       <input type="text" id="supervisor" name="supervisor" value=""><br><br>
 
-      <label for="message">A forgotten hobby:</label><br>
+      <label for="hobby">An abandoned hobby:</label><br>
       <input type="text" id="hobby" name="hobby" value=""><br><br>
 
-      <label for="acc">A gift from someone you can't remember</label><br>
+      <label for="gift">A gift from someone you can't remember:</label><br>
       <input type="text" id="gift" name="gift" value=""><br><br>
+
+      <label for="interview">A difficult meal to prepare:</label><br>
+      <input type="text" id="meal" name="meal" value=""><br><br>
+
+      <label for="pants">An uncomfortable pair of pants:</label><br>
+      <input type="text" id="pants" name="pants" value=""><br><br>
+
 
       <button type="submit">Flush</button>
     </form> 
