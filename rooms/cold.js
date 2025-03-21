@@ -51,7 +51,7 @@ function init() {
 
   iceCubeMesh = new THREE.Mesh(iceCubeGeo, waterMat);
   iceCubeMesh.position.set(0, 1, 0);
-  //scene.add(iceCubeMesh);
+  scene.add(iceCubeMesh);
   
   // add a directional light from above
   let directionalLight = new THREE.DirectionalLight(0xffffff, 1.0);
@@ -62,7 +62,7 @@ function init() {
   scene.add(ambientLight);
 
 
-  addMyModel(); 
+  //addMyModel(); 
   loop();
 }
 
@@ -98,7 +98,21 @@ function placeModel(gltf) {
   let mesh = gltf.scene;
   mesh.position.set(0, 1, 0);
   mesh.scale.set(2, 2, 2);
+
+  let waterMat = new THREE.MeshPhysicalMaterial({
+    color: "0xffffff",
+    metalness: 0,
+    roughness: 0,
+    envMapIntensity: 0.9,
+    clearcoat: 1,
+    transparent: true,
+    transmission: 0.95,
+    opacity: 1,
+    reflectivity: 0.7,
+  });
+
   
+  mesh.material = waterMat; 
   scene.add(mesh);
 }
 
