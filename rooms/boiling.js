@@ -69,7 +69,6 @@ function init() {
   camera.position.x += -3;
   camera.position.y += 2;
   
-  camera.lookAt(10, 1, 10);
   
   
   let cameraPathPoints = [new THREE.Vector3(5.01790986601052, 19.104104162647268, -26.55831266834842),
@@ -106,7 +105,8 @@ function init() {
   let grid = new THREE.GridHelper(100, 100);
   scene.add(grid);
   */
-  
+  camera.lookAt(-10, -1, -10);
+
   // add cave model
   addMyModel();
 
@@ -120,10 +120,6 @@ function addMyModel() {
     "https://cdn.glitch.global/01d9d043-5903-433c-aee7-5c27babdf644/volcano.glb?v=1742529286632";
 
   modelLoader.load(url, placeModel1);
-  
-
-
-
 
 }
 
