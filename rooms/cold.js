@@ -49,13 +49,16 @@ function init() {
   });
   let iceCubeGeo = new THREE.BoxGeometry(2, 2, 2);
 
-    iceCubeMesh = new THREE.Mesh(iceCubeGeo, waterMat);
+  iceCubeMesh = new THREE.Mesh(iceCubeGeo, waterMat);
   iceCubeMesh.position.set(0, 1, 0);
-  scene.add(iceCubeMesh);
+  //scene.add(iceCubeMesh);
 
 
+  addMyModel(); 
   loop();
 }
+
+
 
 function loop() {
     
@@ -71,4 +74,29 @@ function loop() {
   
 }
 
+
+
+
+function addMyModel() {
+  let modelLoader = new GLTFLoader();
+  let url =
+    "../assets/icecube.glb";
+
+  modelLoader.load(url, placeModel);
+  
+}
+
+function placeModel(gltf) {
+  let mesh = gltf.scene;
+  mesh.position.set(0, 1, 0);
+  mesh.scale.set(2, 2, 2);
+  
+  scene.add(mesh);
+}
+
+
+
+
 init();
+
+
