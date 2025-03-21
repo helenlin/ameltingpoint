@@ -69,16 +69,14 @@ function init() {
   camera.position.x += -3;
   camera.position.y += 2;
   
-  camera.lookAt(2, 1, 1);
+  camera.lookAt(10, 1, 10);
   
   
-  let cameraPathPoints = [
-    new THREE.Vector3(5.01790986601052, 15.263034477961003, 14.370088473864921),
-    new THREE.Vector3(-4.816732989261322, 0.5780442700787258, 7.147446154401097),
-    new THREE.Vector3(-3.741245859988548, 4.2707321605602475, 14.00288913705147),
+  let cameraPathPoints = [new THREE.Vector3(5.01790986601052, 19.104104162647268, -26.55831266834842),
+    new THREE.Vector3(0.3843150259995598, 2.8304660690154133, -0.419056140522982),
+    new THREE.Vector3(-2.7658811030401864, 4.386254997688389, 12.268531610119705),
     new THREE.Vector3(-5.562811367526596, 2.043335456859639, 21.645620539626574),
-    new THREE.Vector3(0.4011732488760409, 3.9791314797731365, 29.214046184741324)
-
+    new THREE.Vector3(-4.400331975149757, 2.303787903357875, 36.61455062721977),
     ];
   
   let cameraTargetPosition = new THREE.Vector3(7.761626661823774, 9.771962333849157, -0.011975554976154212);
@@ -131,7 +129,7 @@ function addMyModel() {
 
 function placeModel1(gltf) {
   let mesh = gltf.scene;
-  mesh.position.set(40, 0, 40);
+  mesh.position.set(15, -20, -30);
   mesh.scale.set(50, 50, 50);
   
   scene.add(mesh);
