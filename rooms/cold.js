@@ -52,6 +52,14 @@ function init() {
   iceCubeMesh = new THREE.Mesh(iceCubeGeo, waterMat);
   iceCubeMesh.position.set(0, 1, 0);
   //scene.add(iceCubeMesh);
+  
+  // add a directional light from above
+  let directionalLight = new THREE.DirectionalLight(0xffffff, 1.0);
+  scene.add(directionalLight);
+
+  // and an ambient light
+  let ambientLight = new THREE.AmbientLight(0xccf2ff, 2.0);
+  scene.add(ambientLight);
 
 
   addMyModel(); 
