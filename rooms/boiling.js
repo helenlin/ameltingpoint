@@ -127,37 +127,15 @@ function addMyModel() {
 
 
 
-
-  let url2 =
-    "https://cdn.glitch.global/bc7332d9-3f8a-4a6d-bba7-9e9039b4e61f/ice_cliff_veipbcmcb_mid.glb?v=1742231324869";
-
-  modelLoader.load(url2, placeModel2);
 }
 
 function placeModel1(gltf) {
   let mesh = gltf.scene;
-  mesh.position.set(2, 0, 2);
-  mesh.scale.set(5, 5, 5);
+  mesh.position.set(40, 0, 40);
+  mesh.scale.set(50, 50, 50);
   
   scene.add(mesh);
 
-}
-
-function placeModel2(gltf) {
-  let mesh = gltf.scene;
-  mesh.position.set(30, 0, -5);
-  //mesh.rotateY(10);
-  mesh.scale.set(7, 7, 7);
-  
-  // create our texture and load in an image file
-  let baseColor = textureLoader.load("https://cdn.glitch.global/bc7332d9-3f8a-4a6d-bba7-9e9039b4e61f/Ice_Cliff_uhpocesfa_Mid_2K_BaseColor.jpg?v=1742228384564");
-  
-  // create a normal texture
-  let normColor = textureLoader.load("hhttps://cdn.glitch.global/bc7332d9-3f8a-4a6d-bba7-9e9039b4e61f/Ice_Cliff_uhpocesfa_Mid_2K_Normal.jpg?v=1742228353111");
-  
-  mesh.material = new THREE.MeshPhongMaterial( {map: baseColor, normalMap: normColor} );
-  
-  scene.add(mesh);
 }
 
 
