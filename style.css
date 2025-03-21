@@ -87,7 +87,7 @@ body {
 
 .close-btn {
     display: block;
-    position: absolute;
+    position: fixed;
     top: 100px;
     left: 25px;
     width: 18px;
@@ -119,6 +119,11 @@ body {
 }
 #changingroomtitle {
     width: 80px;
+}
+#lobbytitle {
+    width: 80px;
+    background-color: #b2aead;
+    border: 2px dotted rgb(94, 94, 94);
 }
 
 
